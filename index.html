@@ -5,69 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vathala Sambasiva - DevOps Engineer</title>
   <style>
+    /* General Styles */
     body {
       font-family: 'Arial', sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #1a1a1a;
+      color: #fff;
     }
+
     .container {
       max-width: 900px;
       margin: 20px auto;
       padding: 20px;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      background: #2c3e50;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
     }
+
     h1, h2, h3 {
-      color: #2c3e50;
+      color: #3498db;
     }
+
     h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
+
     h2 {
       font-size: 1.8em;
       margin-top: 20px;
-      border-bottom: 2px solid #2c3e50;
+      border-bottom: 2px solid #3498db;
       padding-bottom: 5px;
     }
+
     h3 {
       font-size: 1.4em;
       margin-top: 15px;
     }
+
     p {
       margin: 10px 0;
     }
+
     ul {
       list-style-type: disc;
       margin: 10px 0 10px 20px;
     }
+
     a {
       color: #3498db;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    .contact-info {
-      display: flex;
-      justify-content: space-between;
+
+    /* Header Section */
+    header {
+      text-align: center;
       margin-bottom: 20px;
     }
-    .contact-info p {
-      margin: 0;
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
     }
-    .section {
-      margin-bottom: 30px;
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
     }
+
+    /* Contact Info */
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info a {
+      color: #fff;
+      background: #3498db;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      background: #2575fc;
+    }
+
+    /* Skills Section */
     .skills-list {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
+
     .skills-list span {
       background: #3498db;
       color: #fff;
@@ -75,28 +113,87 @@
       border-radius: 5px;
       font-size: 0.9em;
     }
+
+    /* Certifications and Awards */
     .certifications, .awards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 10px;
     }
+
     .certifications div, .awards div {
-      background: #ecf0f1;
+      background: #34495e;
       padding: 10px;
       border-radius: 5px;
+      text-align: center;
     }
-    .declaration {
-      font-style: italic;
+
+    /* Email Subscription Form */
+    .email-subscription {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .email-subscription input {
+      padding: 10px;
+      width: 60%;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .email-subscription button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #3498db;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .email-subscription button:hover {
+      background: #2575fc;
+    }
+
+    /* Download Resume Section */
+    .download-resume {
       text-align: center;
       margin-top: 30px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
     }
+
+    .download-resume a {
+      background: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .download-resume a:hover {
+      background: #2575fc;
+    }
+
+    /* Footer */
     .footer {
       text-align: center;
       margin-top: 30px;
       font-size: 0.9em;
       color: #777;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      animation: fadeIn 1s ease-in-out;
     }
   </style>
 </head>
@@ -104,23 +201,29 @@
   <div class="container">
     <header>
       <h1>Vathala Sambasiva</h1>
-      <div class="contact-info">
-        <p>Mobile: +91-8712328017</p>
-        <p>Email: <a href="mailto:vathalasambasiva0@gmail.com">vathalasambasiva0@gmail.com</a></p>
-      </div>
+      <p>DevOps Engineer | Site Reliability Engineer (SRE)</p>
     </header>
 
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <a href="mailto:vathalasambasiva0@gmail.com">Email Me</a>
+      <a href="https://www.linkedin.com/in/vathala-sambasiva" target="_blank">LinkedIn</a>
+      <a href="https://github.com/vathalasambasiva" target="_blank">GitHub</a>
+    </div>
+
+    <!-- Summary Section -->
     <section class="section">
       <h2>SUMMARY</h2>
       <p>
-        DevOps Engineer with 3 years of hands-on experience in automating, scaling, and managing infrastructures in agile environments. Proficient in CI/CD pipeline creation, containerization, and cloud infrastructure management with AWS and GCP. Expertise in configuration management using Ansible, Docker, and Terraform. Strong knowledge in source code management, server monitoring, and code quality practices. Certified in AWS and GCP cloud technologies. Skilled in Infrastructure as Code (IaC), continuous monitoring, and ensuring high availability and scalability.
+        DevOps Engineer with 3+ years of hands-on experience in automating, scaling, and managing infrastructures in agile environments. Proficient in CI/CD pipeline creation, containerization, and cloud infrastructure management with AWS and GCP. Expertise in configuration management using Ansible, Docker, and Terraform. Strong knowledge in source code management, server monitoring, and code quality practices. Certified in AWS and GCP cloud technologies. Skilled in Infrastructure as Code (IaC), continuous monitoring, and ensuring high availability and scalability.
       </p>
     </section>
 
+    <!-- Work Experience Section -->
     <section class="section">
       <h2>WORK EXPERIENCE</h2>
       <h3>Cognizant | DevOps Engineer</h3>
-      <p><em>July 2021 – Present</em></p>
+      <p><em>Oct 2021 – Present</em></p>
       <ul>
         <li><strong>Version Control & Source Code Management:</strong> Proficient in using Git and GitLab for version control and source code management. Managed branches, tags, and resolved merge conflicts using Git. Implemented CI/CD pipelines using GitLab Actions and Jenkins, reducing deployment time by 30%.</li>
         <li><strong>Continuous Integration & Deployment:</strong> Automated build and deployment processes with Jenkins, including configuring Master-Slave connections for distributed builds. Leveraged Docker to containerize applications, build Docker images, and deploy containers, facilitating the transition from monolithic to microservices architecture. Familiar with Kubernetes for managing containerized workloads and services.</li>
@@ -133,6 +236,7 @@
       </ul>
     </section>
 
+    <!-- Technical Skills Section -->
     <section class="section">
       <h2>TECHNICAL SKILLS</h2>
       <div class="skills-list">
@@ -159,6 +263,7 @@
       </div>
     </section>
 
+    <!-- Certifications Section -->
     <section class="section">
       <h2>CERTIFICATIONS</h2>
       <div class="certifications">
@@ -170,6 +275,7 @@
       </div>
     </section>
 
+    <!-- Awards Section -->
     <section class="section">
       <h2>RECOGNITION & AWARDS</h2>
       <div class="awards">
@@ -179,30 +285,20 @@
       </div>
     </section>
 
-    <section class="section">
-      <h2>EDUCATION</h2>
-      <h3>B.Tech in Electronics & Communication Engineering (ECE)</h3>
-      <p>Jawaharlal Nehru Technological University, Anantapur – Graduated: 2021</p>
-      <h3>Higher Secondary Certificate (HSC)</h3>
-      <p>A.P Model School & College – Graduated: 2017</p>
-      <h3>Secondary School Certificate (SSC)</h3>
-      <p>Z.P High School – Graduated: 2015</p>
+    <!-- Email Subscription Section -->
+    <section class="email-subscription">
+      <h2>Get Opportunities</h2>
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
     </section>
 
-    <section class="section">
-      <h2>PERSONAL INFORMATION</h2>
-      <p><strong>Date of Birth:</strong> 18-06-2000</p>
-      <p><strong>Nationality:</strong> Indian</p>
-      <p><strong>Languages:</strong> Telugu, English, Tamil</p>
-      <p><strong>Permanent Address:</strong> 1-22, Kotagudibanda, Kalakada(M), Annamaya(D)-517236</p>
+    <!-- Download Resume Section -->
+    <section class="download-resume">
+      <h2>Download My Resume</h2>
+      <a href="path/to/your/resume.pdf" download>Download Resume</a>
     </section>
 
-    <section class="declaration">
-      <p>I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
-      <p><strong>Yours Faithfully,</strong></p>
-      <p><strong>Vathala Sambasiva</strong></p>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
       <p>&copy; 2023 Vathala Sambasiva. All rights reserved.</p>
     </footer>
